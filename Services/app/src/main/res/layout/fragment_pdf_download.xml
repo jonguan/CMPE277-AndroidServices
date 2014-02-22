@@ -1,3 +1,9 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:orientation="vertical" >
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -47,7 +53,8 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:hint="URL here"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:text="http://www.sjsu.edu/cs/docs/sp14/hours.pdf"/>
     </LinearLayout>
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
@@ -64,7 +71,8 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:hint="URL here"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:text="http://www.engr.sjsu.edu/media/pdf/res/coe_res_facdev_grant_symp_120310_datta-barua.pdf"/>
     </LinearLayout>
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
@@ -81,7 +89,8 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:hint="URL here"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:text="http://www.engr.sjsu.edu/media/pdf/res/coe_res_facdev_grant_symp_120310_eirinaki.pdf"/>
     </LinearLayout>
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
@@ -98,7 +107,8 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:hint="URL here"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:text="http://www.engr.sjsu.edu/media/pdf/res/coe_res_facdev_grant_symp_120310_dessouky_patel.pdf"/>
     </LinearLayout>
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
@@ -125,4 +135,4 @@
 
 </LinearLayout>
 
-
+</ScrollView>

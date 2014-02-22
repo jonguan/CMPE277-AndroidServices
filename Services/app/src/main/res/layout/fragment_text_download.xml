@@ -1,3 +1,9 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:orientation="vertical" >
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -23,10 +29,12 @@
             android:layout_height="wrap_content"
             android:text="@string/file_location_1"/>
         <EditText
+            android:id="@+id/textUrl1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:hint="URL here"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:text="http://www.engr.sjsu.edu/lwesley/teaching/ENGR297B/ExamAnswers/redo_quiz1_answer.txt"/>
     </LinearLayout>
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -39,10 +47,12 @@
             android:layout_height="wrap_content"
             android:text="@string/file_location_2"/>
         <EditText
+            android:id="@+id/textUrl2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:hint="URL here"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:text="http://www.engr.sjsu.edu/lwesley/teaching/ENGR297B/Exams/ENGR297B_Quiz2_Fall2011.txt"/>
     </LinearLayout>
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
@@ -54,11 +64,12 @@
             android:layout_height="wrap_content"
             android:text="@string/file_location_3"/>
         <EditText
+            android:id="@+id/textUrl3"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:hint="URL here"
             android:layout_weight="1"
-            android:text="hello world"/>
+            android:text="http://www.sjsu.edu/robots.txt"/>
     </LinearLayout>
 
 
@@ -81,9 +92,10 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
+            android:layout_alignParentEnd="true"
+            android:onClick="downloadTexts"/>
     </RelativeLayout>
 </LinearLayout>
 
-
+</ScrollView>
 

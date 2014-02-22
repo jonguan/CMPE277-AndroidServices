@@ -14,6 +14,8 @@ import edu.sjsu.services.app.LogUtil;
 
 public class MainActivity extends ActionBarActivity {
 
+    public static String LOG_TAG = "edu.sjsu.services.app.logtag";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

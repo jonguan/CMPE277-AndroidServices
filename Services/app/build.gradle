@@ -5,7 +5,7 @@ android {
     buildToolsVersion "19.0.1"
 
     defaultConfig {
-        minSdkVersion 7
+        minSdkVersion 14
         targetSdkVersion 19
         versionCode 1
         versionName "1.0"
@@ -22,6 +22,6 @@ dependencies {
     compile 'com.android.support:appcompat-v7:+'
     compile fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
     //compile group: 'com.google.code.microlog4android', name: 'microlog4android', version: '1.0.+'
-    compile files('libs/microlog4android-1.0.0.jar')
+//    compile files('libs/microlog4android-1.0.0.jar')
 }
 

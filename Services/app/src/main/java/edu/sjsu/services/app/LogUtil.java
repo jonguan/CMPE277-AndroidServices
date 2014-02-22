@@ -21,8 +21,10 @@ public class LogUtil extends Activity {
 
     public static synchronized void appendLog(Context con, String text)
     {
-        //File dataDir = Environment.getDataDirectory();
+//        File dataDir = Environment.getDataDirectory();
         File dataDir = con.getFilesDir();
+
+
 
         File logFile = new File(dataDir, "log.txt");
         if (!logFile.exists())

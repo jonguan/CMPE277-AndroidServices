@@ -31,7 +31,8 @@
         </activity>
         <activity
             android:name="edu.sjsu.services.app.TextDownloadActivity"
-            android:label="@string/title_activity_text_download">
+            android:label="@string/title_activity_text_download"
+            android:parentActivityName=".MainActivity">
         </activity>
 
         // Service only available to this app
@@ -41,4 +42,6 @@
 
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 </manifest>

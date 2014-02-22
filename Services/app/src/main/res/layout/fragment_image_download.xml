@@ -1,3 +1,8 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:orientation="vertical" >
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -23,10 +28,12 @@
             android:layout_height="wrap_content"
             android:text="@string/file_location_1"/>
         <EditText
+            android:id="@+id/imageUrl1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:hint="URL here"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:text="http://www.sjsu.edu/sjsuhome/pics/tower-hall.jpg"/>
     </LinearLayout>
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -39,10 +46,12 @@
             android:layout_height="wrap_content"
             android:text="@string/file_location_2"/>
         <EditText
+            android:id="@+id/imageUrl2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:hint="URL here"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:text="http://blogs.sjsu.edu/today/files/2014/02/Bloom_homescreen-2ky67ll.jpg"/>
     </LinearLayout>
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
@@ -54,10 +63,12 @@
             android:layout_height="wrap_content"
             android:text="@string/file_location_3"/>
         <EditText
+            android:id="@+id/imageUrl3"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:hint="URL here"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:text="http://blogs.sjsu.edu/today/files/2014/02/Today-Inpost-Cinequest-022114-1szs6bu.jpg"/>
     </LinearLayout>
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
@@ -69,10 +80,12 @@
             android:layout_height="wrap_content"
             android:text="@string/file_location_4"/>
         <EditText
+            android:id="@+id/imageUrl4"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:hint="URL here"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:text="http://blogs.sjsu.edu/today/files/2014/02/Today-Inpost-olenka-021314-qqh9lm.jpg"/>
     </LinearLayout>
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
@@ -84,10 +97,12 @@
             android:layout_height="wrap_content"
             android:text="@string/file_location_5"/>
         <EditText
+            android:id="@+id/imageUrl5"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:hint="URL here"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:text="http://blogs.sjsu.edu/today/files/2014/02/Today-Inpost-farb-021314-23jfj4z.jpg"/>
     </LinearLayout>
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
@@ -99,10 +114,12 @@
             android:layout_height="wrap_content"
             android:text="@string/file_location_6"/>
         <EditText
+            android:id="@+id/imageUrl6"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:hint="URL here"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:text="http://blogs.sjsu.edu/today/files/2014/02/Super-Sunday_0000_021614-2lwh6tq.jpg"/>
     </LinearLayout>
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
@@ -114,10 +131,12 @@
             android:layout_height="wrap_content"
             android:text="@string/file_location_7"/>
         <EditText
+            android:id="@+id/imageUrl7"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:hint="URL here"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:text="http://blogs.sjsu.edu/today/files/2014/02/Super-Sunday_0007_021614-1pvr290.jpg"/>
     </LinearLayout>
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
@@ -129,10 +148,12 @@
             android:layout_height="wrap_content"
             android:text="@string/file_location_8"/>
         <EditText
+            android:id="@+id/imageUrl8"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:hint="URL here"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:text="http://blogs.sjsu.edu/today/wp-content/themes/SJSUToday/images/icon-spartan.png"/>
     </LinearLayout>
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
@@ -144,10 +165,12 @@
             android:layout_height="wrap_content"
             android:text="@string/file_location_9"/>
         <EditText
+            android:id="@+id/imageUrl9"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:hint="URL here"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:text="http://blogs.sjsu.edu/today/files/2013/11/Today_Inpost_Gray_112513-1m1hxzq.jpg"/>
     </LinearLayout>
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
@@ -159,10 +182,12 @@
             android:layout_height="wrap_content"
             android:text="@string/file_location_10"/>
         <EditText
+            android:id="@+id/imageUrl10"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:hint="URL here"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:text="http://blogs.sjsu.edu/today/files/2013/12/lou-tully-in-post-1wo2kip.jpg"/>
     </LinearLayout>
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
@@ -183,7 +208,8 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
+            android:layout_alignParentEnd="true"
+            android:onClick="downloadImages"/>
     </RelativeLayout>
 </LinearLayout>
-
+</ScrollView>
