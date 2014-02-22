@@ -1,32 +1,18 @@
 package edu.sjsu.services.app;
 
 import android.app.Service;
-import android.os.AsyncTask;
 import android.os.Binder;
 import android.os.IBinder;
-import android.content.Context;
-import android.os.Environment;
 import android.content.Intent;
-import android.util.Log;
-import android.widget.EditText;
 import android.widget.Toast;
 import java.net.URL;
-import java.net.MalformedURLException;
-import java.net.ProtocolException;
 import java.util.Timer;
-import java.net.HttpURLConnection;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.FileOutputStream;
-import java.io.InputStream;
-import java.io.IOException;
-
 
 
 /**
  * Created by jonguan on 2/20/14.
  */
-public class PDFPullService extends Service {
+public class PullService extends Service {
 
     int counter = 0;
     public URL[] urls;
@@ -39,9 +25,9 @@ public class PDFPullService extends Service {
 
     // Class used for the client Binder. Service runs on same thread as client.
     public class LocalBinder extends Binder {
-        PDFPullService getService() {
-            // Return this instance of PDFPullService
-            return PDFPullService.this;
+        PullService getService() {
+            // Return this instance of PullService
+            return PullService.this;
         }
     }
 
@@ -76,13 +62,13 @@ public class PDFPullService extends Service {
         if (timer != null) {
             timer.cancel();
         }
-        Toast.makeText(this, "PDF Service Destroyed", Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "Service Destroyed", Toast.LENGTH_LONG).show();
     }
 
 
     public void downloadUrls(String... urls) {
-        Toast.makeText(this, "PDF Service Started", Toast.LENGTH_LONG).show();
-        LogUtil.appendLog(this, "PDF service started");
+        Toast.makeText(this, "Service Started", Toast.LENGTH_LONG).show();
+        LogUtil.appendLog(this, "Service started");
 
 
         for (String uri : urls) {
@@ -91,7 +77,7 @@ public class PDFPullService extends Service {
         }
 
 
-        Toast.makeText(this, "PDF Service Completed", Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "Service Completed", Toast.LENGTH_LONG).show();
     }
 
 

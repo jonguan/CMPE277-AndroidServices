@@ -27,7 +27,7 @@ public class DownloadTask extends AsyncTask<String, Void, String> {
     // onPostExecute displays the results of the AsyncTask.
     @Override
     protected void onPostExecute(String result) {
-        Log.v(MainActivity.LOG_TAG, "download complete" + result);
+        Log.v(MainActivity.LOG_TAG, "download complete " + result);
     }
 
     // Given a URL, establishes an HttpUrlConnection and retrieves the web page content as a InputStream, which it returns as a string.

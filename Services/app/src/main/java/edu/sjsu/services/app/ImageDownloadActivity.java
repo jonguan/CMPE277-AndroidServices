@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.content.ServiceConnection;
 import android.os.IBinder;
 import android.support.v7.app.ActionBarActivity;
-import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,12 +13,11 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.os.Build;
 import android.widget.EditText;
 
 public class ImageDownloadActivity extends ActionBarActivity {
 
-    PDFPullService pullService;
+    PullService pullService;
     boolean mBound = false;
 
     @Override
@@ -74,7 +72,7 @@ public class ImageDownloadActivity extends ActionBarActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        Intent intent = new Intent(this, PDFPullService.class);
+        Intent intent = new Intent(this, PullService.class);
         // Bind to LocalService
         bindService(intent, mConnection, Context.BIND_ADJUST_WITH_ACTIVITY | Context.BIND_AUTO_CREATE);
     }
@@ -95,7 +93,7 @@ public class ImageDownloadActivity extends ActionBarActivity {
         @Override
         public void onServiceConnected(ComponentName className, IBinder service) {
             // We've bound to LocalService, cast the IBinder and get LocalService instance
-            PDFPullService.LocalBinder binder = (PDFPullService.LocalBinder) service;
+            PullService.LocalBinder binder = (PullService.LocalBinder) service;
             pullService = binder.getService();
             mBound = true;
         }
@@ -111,7 +109,7 @@ public class ImageDownloadActivity extends ActionBarActivity {
         LogUtil.appendLog(this, "Button clicked to download images");
 
         // Set intent
-//        Intent intent = new Intent(this, PDFPullService.class);
+//        Intent intent = new Intent(this, PullService.class);
         String uri1 = ((EditText)findViewById(R.id.imageUrl1)).getText().toString();
         String uri2 = ((EditText)findViewById(R.id.imageUrl2)).getText().toString();
         String uri3 = ((EditText)findViewById(R.id.imageUrl3)).getText().toString();

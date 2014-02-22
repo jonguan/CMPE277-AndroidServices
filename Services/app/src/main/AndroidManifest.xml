@@ -36,7 +36,7 @@
         </activity>
 
         // Service only available to this app
-        <service android:name=".PDFPullService"
+        <service android:name=".PullService"
             android:exported="false"/>
     </application>
 
